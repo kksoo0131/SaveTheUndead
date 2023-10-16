@@ -26,6 +26,18 @@ Unity를 이용한 Dodge like
 - **IDE** : Visual Studio 2022
 - **Framework** : .NET 6.0
 
+### 내가 구현한 기능
+
+1. 탄환을 발사하는 기능
+   
+   BulletManager - <a href="https://github.com/NBCampUnityA05/SaveTheUndead/wiki/4-%E2%80%90-BulletManager" >상세보기 - WIKI 이동</a>
+   
+   
+3. 맵에 적이 겹치지 않게 스폰하는 기능
+    
+   EnemyManager - <a href="https://github.com/NBCampUnityA05/SaveTheUndead/wiki/5-%E2%80%90-EnemyManager" >상세보기 - WIKI 이동</a>
+
+
 ### 📜 Assets References
 - https://assetstore.unity.com/packages/2d/undead-survivor-assets-pack-238068
 - https://freesound.org/people/ShadyDave/sounds/608630/
