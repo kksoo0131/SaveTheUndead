@@ -31,11 +31,21 @@ Unity를 이용한 Dodge like
 1. 탄환을 발사하는 기능
    
    BulletManager - <a href="https://github.com/NBCampUnityA05/SaveTheUndead/wiki/4-%E2%80%90-BulletManager" >상세보기 - WIKI 이동</a>
+
+   Bullet의 생성과 파괴가 너무 많이 발생한다. 개선하기 위해서는 Object Pool을 만들어서 Object Pool로 관리하는 방법이 있다.
+
+   Object Pool에 Bullet이 파괴될 시점에 SetActive(false)로 GameObject를 비활성화한 상태로 보관하고 Object Pool에 객체가 있으면
+
+   Bullet을 새로 생성하지 않고 Object Pool에 보관된 객체를 초기화하여 다시 사용하는 것으로 기능을 개선할 수 있다.
    
    
 3. 맵에 적이 겹치지 않게 스폰하는 기능
     
    EnemyManager - <a href="https://github.com/NBCampUnityA05/SaveTheUndead/wiki/5-%E2%80%90-EnemyManager" >상세보기 - WIKI 이동</a>
+
+   처음에는 적이 처치되는 기능을 생각하지 않았지만 나중에 추가한 기능이라 처치된 적의 자리에 다시 몹이 스폰하도록 만들지 못했다.
+   
+   적이 스폰 될때 자신의 위치정보를 가지고 파괴될때 생성 위치를 다시 List에 추가하는 식으로 기능을 수정 하면 개선할 수 있다고 생각한다.
 
 
 ### 📜 Assets References
